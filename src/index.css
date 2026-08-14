@@ -50,6 +50,14 @@
   color: #0F172A !important;
 }
 
+/* Force white text for cover page hero text on all themes including blue-white */
+.hero-quote-text,
+.text-force-white,
+[data-theme="blue-white"] .hero-quote-text,
+[data-theme="blue-white"] .text-force-white {
+  color: #FFFFFF !important;
+}
+
 [data-theme="blue-white"] .text-\[\#D4D4D8\] {
   color: #334155 !important;
 }
