@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+/* Base variables & Defaults (Dark Gold) */
+:root, [data-theme="dark-gold"] {
+  --bg-canvas: #050505;
+  --bg-card: #0F0F0F;
+  --bg-header: #0A0A0A;
+  --bg-sidebar: #0A0A0A;
+  --text-main: #FFFFFF;
+  --text-muted: #71717A;
+  --accent-primary: #F59E0B;
+  --accent-text: #F59E0B;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+}
+
+/* ==========================================================================
+   1. BLUE & WHITE THEME (Corporate Light / Customer Portal Theme)
+   ========================================================================== */
+[data-theme="blue-white"] {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+[data-theme="blue-white"] body {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+[data-theme="blue-white"] .min-h-screen {
+  background-color: #F8FAFC !important;
+}
+
+/* Containers & Cards */
+[data-theme="blue-white"] .bg-\[\#050505\] {
+  background-color: #F1F5F9 !important;
+}
+
+[data-theme="blue-white"] .bg-\[\#0F0F0F\] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04) !important;
+}
+
+[data-theme="blue-white"] .bg-\[\#0A0A0A\] {
+  background-color: #0F172A !important;
+}
+
+/* Typography Overrides */
+[data-theme="blue-white"] .text-white {
+  color: #0F172A !important;
+}
+
+[data-theme="blue-white"] .text-\[\#D4D4D8\] {
+  color: #334155 !important;
+}
+
+[data-theme="blue-white"] .text-\[\#71717A\] {
+  color: #64748B !important;
+}
+
+[data-theme="blue-white"] .text-\[\#A1A1AA\] {
+  color: #475569 !important;
+}
+
+/* Accent Color -> Royal Blue */
+[data-theme="blue-white"] .text-\[\#F59E0B\] {
+  color: #2563EB !important;
+}
+
+[data-theme="blue-white"] .bg-\[\#F59E0B\] {
+  background-color: #2563EB !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="blue-white"] .hover\:bg-amber-400:hover {
+  background-color: #1D4ED8 !important;
+}
+
+[data-theme="blue-white"] .bg-amber-500\/10 {
+  background-color: rgba(37, 99, 235, 0.08) !important;
+}
+
+[data-theme="blue-white"] .border-amber-500\/20 {
+  border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+/* Borders */
+[data-theme="blue-white"] .border-white\/5,
+[data-theme="blue-white"] .border-white\/10 {
+  border-color: #E2E8F0 !important;
+}
+
+[data-theme="blue-white"] .divide-white\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #E2E8F0 !important;
+}
+
+/* Form Controls */
+[data-theme="blue-white"] input,
+[data-theme="blue-white"] select,
+[data-theme="blue-white"] textarea {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+[data-theme="blue-white"] input::placeholder,
+[data-theme="blue-white"] textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+[data-theme="blue-white"] input:focus,
+[data-theme="blue-white"] select:focus,
+[data-theme="blue-white"] textarea:focus {
+  border-color: #2563EB !important;
+}
+
+/* Header & Sidebar explicit contrast preservation */
+[data-theme="blue-white"] header {
+  background-color: #0F172A !important;
+  border-bottom-color: #1E293B !important;
+}
+
+[data-theme="blue-white"] header .text-white,
+[data-theme="blue-white"] header .text-\[\#D4D4D8\] {
+  color: #FFFFFF !important;
+}
+
+[data-theme="blue-white"] header .text-\[\#71717A\] {
+  color: #94A3B8 !important;
+}
+
+[data-theme="blue-white"] header input {
+  background-color: #1E293B !important;
+  color: #FFFFFF !important;
+  border-color: #334155 !important;
+}
+
+[data-theme="blue-white"] aside {
+  background-color: #0F172A !important;
+  border-right-color: #1E293B !important;
+}
+
+[data-theme="blue-white"] aside .text-white,
+[data-theme="blue-white"] aside .text-\[\#D4D4D8\] {
+  color: #FFFFFF !important;
+}
+
+[data-theme="blue-white"] aside .text-\[\#71717A\] {
+  color: #94A3B8 !important;
+}
+
+
+/* ==========================================================================
+   2. MIDNIGHT SLATE NAVY THEME (Staff Theme)
+   ========================================================================== */
+[data-theme="slate-dark"] {
+  background-color: #0F172A !important;
+  color: #E2E8F0 !important;
+}
+
+[data-theme="slate-dark"] body {
+  background-color: #0F172A !important;
+}
+
+[data-theme="slate-dark"] .min-h-screen {
+  background-color: #0F172A !important;
+}
+
+/* Containers & Cards */
+[data-theme="slate-dark"] .bg-\[\#050505\] {
+  background-color: #0B132B !important;
+}
+
+[data-theme="slate-dark"] .bg-\[\#0F0F0F\] {
+  background-color: #1E293B !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="slate-dark"] .bg-\[\#0A0A0A\] {
+  background-color: #0B132B !important;
+}
+
+/* Accent Color -> Sky Sapphire Blue */
+[data-theme="slate-dark"] .text-\[\#F59E0B\] {
+  color: #3B82F6 !important;
+}
+
+[data-theme="slate-dark"] .bg-\[\#F59E0B\] {
+  background-color: #3B82F6 !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="slate-dark"] .hover\:bg-amber-400:hover {
+  background-color: #2563EB !important;
+}
+
+[data-theme="slate-dark"] .bg-amber-500\/10 {
+  background-color: rgba(59, 130, 246, 0.12) !important;
+}
+
+[data-theme="slate-dark"] .border-amber-500\/20 {
+  border-color: rgba(59, 130, 246, 0.25) !important;
+}
+
+[data-theme="slate-dark"] input,
+[data-theme="slate-dark"] select,
+[data-theme="slate-dark"] textarea {
+  background-color: #0F172A !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+
+/* Scrollbar custom styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+[data-theme="blue-white"] ::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.15);
+}

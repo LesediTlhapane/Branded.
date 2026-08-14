@@ -1,0 +1,6 @@
+{
+  "name": "Branded Products Quote Platform",
+  "description": "Enterprise quotation platform for South African branded merchandise with automated volume pricing, variant engine, and versioning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
