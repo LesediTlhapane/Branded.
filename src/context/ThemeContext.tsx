@@ -15,19 +15,19 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-const THEME_STORAGE_KEY = 'sa_quote_app_theme_mode_v1';
+const THEME_STORAGE_KEY = 'sa_quote_app_theme_mode_v2';
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const { user, role } = useAuth();
   const [isCustomerPortalActive, setIsCustomerPortalActive] = useState(false);
 
   const [themeMode, setThemeModeState] = useState<ThemeMode>(() => {
-    if (typeof window === 'undefined') return 'auto';
+    if (typeof window === 'undefined') return 'blue-white';
     try {
       const saved = localStorage.getItem(THEME_STORAGE_KEY);
-      return (saved as ThemeMode) || 'auto';
+      return (saved as ThemeMode) || 'blue-white';
     } catch {
-      return 'auto';
+      return 'blue-white';
     }
   });
 
